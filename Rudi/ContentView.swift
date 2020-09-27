@@ -5,7 +5,7 @@
 //  Created by Kurt Höblinger on 26.09.20.
 //
 
-import SwiftUI
+/*import SwiftUI
 import CoreData
 
 struct ContentView: View {
@@ -14,7 +14,7 @@ struct ContentView: View {
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var items: FetchedResults<Region>
 
     var body: some View {
         List {
@@ -36,8 +36,8 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newItem = Region(context: viewContext)
+            newItem.name = Date()
 
             do {
                 try viewContext.save()
@@ -78,3 +78,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+*/

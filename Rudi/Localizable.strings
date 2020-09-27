@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Rudi
+
+  Created by Kurt Höblinger on 27.09.20.
+  
+*/
+"WARN_1" = "Einzelne Fälle, isolierte Cluster";
+"WARN_2" = "Moderate Fälle, primär in Clustern";
+"WARN_3" = "Häufung von Fällen, nicht mehr überwiegend Clustern zuordenbar";
+"WARN_4" = "Unkontrollierte Ausbrüche, großflächige Verbreitung";
+"WARN_0" = "Bleibt gesund.";
+
+"SETTINGS" = "Einstellungen";
+"SYNC" = "Rudi speichert die aktuellen Corona-Ampel-Daten ab.";

@@ -10,11 +10,11 @@ import CoreData
 struct PersistenceController {
     static let shared = PersistenceController()
 
-    static var preview: PersistenceController = {
+    /*static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
+            let newItem = Region(context: viewContext)
             newItem.timestamp = Date()
         }
         do {
@@ -26,15 +26,56 @@ struct PersistenceController {
             fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
         return result
-    }()
+    }()*/
 
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "Rudi")
-        if inMemory {
-            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+        /*
+         AppGroup additions
+         
+         1. define the AppGroup
+         2. define the name of the database (<name>.xcdatamodeld)
+         3. get the AppGroup's file container
+         5. get the URL to the file container
+         6. create a persistent container
+         7. create a store description containing the url to the file container
+         8. point the persistent container to the store in the AppGroups file container
+         9. continue like without AppGroups
+         
+         Why all this? because you could decide to use the app's local persistent container and use
+         the AppGroup's file container for something else. Of course,
+         
+         let container = NSPersistentContainer(name: "SomeName", location: "group.some.identifier")
+         
+         would be too much to ask...
+         */
+        
+        let appGroup = "group.com.nitricware.Rudi"
+        let databaseName = "Rudi"
+        
+        guard let fileContainer = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroup) else {
+            fatalError("Shared file container could not be created.")
         }
+
+        let containerURL = fileContainer.appendingPathComponent("\(databaseName).sqlite")
+        
+        container = NSPersistentContainer(name: "Rudi")
+        let storeDescription = NSPersistentStoreDescription(url: containerURL)
+        
+        if inMemory {
+            container.persistentStoreDescriptions.first!.url = containerURL
+        } else {
+            container.persistentStoreDescriptions = [storeDescription]
+        }
+        
+        /*
+         The persistent container for the application. This implementation
+         creates and returns a container, having loaded the store for the
+         application to it. This property is optional since there are legitimate
+         error conditions that could cause the creation of the store to fail.
+        */
+        //let container = NSPersistentContainer(name: "Rudi")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

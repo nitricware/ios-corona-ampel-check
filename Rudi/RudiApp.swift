@@ -13,7 +13,7 @@ struct RudiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AmpelStartView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
