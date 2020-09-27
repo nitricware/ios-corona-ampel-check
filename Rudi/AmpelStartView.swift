@@ -102,7 +102,7 @@ struct AmpelStartView: View {
                 }
             }.padding()
                 
-            .navigationBarTitle(Text("Corona Ampel"))
+            .navigationBarTitle(Text("Warnstufen-Ampel"))
             .navigationBarItems(trailing:
                 NavigationLink(
                     destination: PreferencesView().environment(\.managedObjectContext, viewContext),
