@@ -13,3 +13,14 @@
 
 "SETTINGS" = "Einstellungen";
 "SYNC" = "Rudi speichert die aktuellen Corona-Ampel-Daten ab.";
+
+"DATENQUELLE" = "Datenquelle";
+"DATENQUELLE_TEXT" = "BMSGPK, Österreichische Open Data Informationsportal (https://www.data.gv.at)";
+
+"MUNICIPALITY" = "Gemeinde";
+"MY_MUNICIPALITY" = "Meine Gemeinde";
+"UNKNOWN" = "unbekannt";
+
+"DB_ERROR" = "Ein Fehler mit der Datenbank ist aufgetreten.";
+"JSON_ERROR" = "Ein Fehler mit der Datenquelle ist aufgetreten.";
+"UNEXPECTED_ERROR" = "Ein unerwarteter Fehler ist aufgetreten.";

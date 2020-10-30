@@ -7,43 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4537355F2524E42D0017B036 /* CircleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4537355E2524E42C0017B036 /* CircleExtension.swift */; };
+		455C6125254C1E22008C71D5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AE09C2252099E100F43EF2 /* WidgetKit.framework */; };
+		455C6126254C1E22008C71D5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AE09C4252099E100F43EF2 /* SwiftUI.framework */; };
+		455C6129254C1E22008C71D5 /* RudiWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455C6128254C1E22008C71D5 /* RudiWidget.swift */; };
+		455C612B254C1E22008C71D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455C612A254C1E22008C71D5 /* Assets.xcassets */; };
+		455C612F254C1E22008C71D5 /* RudiWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 455C6124254C1E22008C71D5 /* RudiWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		455C6136254C1E7D008C71D5 /* AlertTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567E3042533227200AF0333 /* AlertTypes.swift */; };
+		455C613A254C1E7F008C71D5 /* CircleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4537355E2524E42C0017B036 /* CircleExtension.swift */; };
+		455C613E254C1E85008C71D5 /* AmpelDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E010251F231600DA05A8 /* AmpelDataSet.swift */; };
+		455C6142254C1E88008C71D5 /* AmpelRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E00F251F231600DA05A8 /* AmpelRegion.swift */; };
+		455C614D254C1E8F008C71D5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF5D251F10F100DF131C /* Persistence.swift */; };
+		455C6151254C1E93008C71D5 /* RudiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4564E1F0251F34DC00BE96DA /* RudiError.swift */; };
+		455C6155254C1E97008C71D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45AE09B825207B3600F43EF2 /* Localizable.strings */; };
+		455C6159254C1EA9008C71D5 /* Rudi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E009251F22DE00DA05A8 /* Rudi.swift */; };
+		455C615D254C1EB7008C71D5 /* Rudi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF5F251F10F100DF131C /* Rudi.xcdatamodeld */; };
 		4563FF55251F10EE00DF131C /* RudiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF54251F10EE00DF131C /* RudiApp.swift */; };
-		4563FF57251F10EE00DF131C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF56251F10EE00DF131C /* ContentView.swift */; };
 		4563FF59251F10F100DF131C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4563FF58251F10F100DF131C /* Assets.xcassets */; };
 		4563FF5C251F10F100DF131C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4563FF5B251F10F100DF131C /* Preview Assets.xcassets */; };
 		4563FF5E251F10F100DF131C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF5D251F10F100DF131C /* Persistence.swift */; };
 		4563FF61251F10F100DF131C /* Rudi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF5F251F10F100DF131C /* Rudi.xcdatamodeld */; };
 		4564E1F1251F34DC00BE96DA /* RudiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4564E1F0251F34DC00BE96DA /* RudiError.swift */; };
+		4567E3052533227200AF0333 /* AlertTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567E3042533227200AF0333 /* AlertTypes.swift */; };
 		45AE09B925207B3600F43EF2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45AE09B825207B3600F43EF2 /* Localizable.strings */; };
-		45AE09C3252099E100F43EF2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AE09C2252099E100F43EF2 /* WidgetKit.framework */; };
-		45AE09C5252099E100F43EF2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AE09C4252099E100F43EF2 /* SwiftUI.framework */; };
-		45AE09C8252099E100F43EF2 /* Rudi_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE09C7252099E100F43EF2 /* Rudi_Widget.swift */; };
-		45AE09CB252099E200F43EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AE09CA252099E200F43EF2 /* Assets.xcassets */; };
-		45AE09CD252099E200F43EF2 /* Rudi_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 45AE09C9252099E100F43EF2 /* Rudi_Widget.intentdefinition */; };
-		45AE09CE252099E200F43EF2 /* Rudi_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 45AE09C9252099E100F43EF2 /* Rudi_Widget.intentdefinition */; };
-		45AE09D1252099E200F43EF2 /* Rudi WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 45AE09C0252099E100F43EF2 /* Rudi WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		45AE09DB25209A2700F43EF2 /* Rudi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E009251F22DE00DA05A8 /* Rudi.swift */; };
-		45AE09DE25209A2B00F43EF2 /* Rudi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF5F251F10F100DF131C /* Rudi.xcdatamodeld */; };
-		45AE09E125209A3300F43EF2 /* RudiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4564E1F0251F34DC00BE96DA /* RudiError.swift */; };
-		45AE09E425209A7500F43EF2 /* AmpelDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E010251F231600DA05A8 /* AmpelDataSet.swift */; };
-		45AE09E725209A7800F43EF2 /* AmpelRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E00F251F231600DA05A8 /* AmpelRegion.swift */; };
-		45AE09EA25209A7D00F43EF2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF5D251F10F100DF131C /* Persistence.swift */; };
-		45AE09ED25209F1D00F43EF2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45AE09B825207B3600F43EF2 /* Localizable.strings */; };
+		45B146C6252788EA000D1A97 /* AmpelStartViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B146C5252788EA000D1A97 /* AmpelStartViewExtension.swift */; };
 		45B97939251F12A900CB2BB7 /* AmpelStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B97938251F12A900CB2BB7 /* AmpelStartView.swift */; };
 		45C4E007251F1A9400DA05A8 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E006251F1A9400DA05A8 /* PreferencesView.swift */; };
 		45C4E00A251F22DE00DA05A8 /* Rudi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E009251F22DE00DA05A8 /* Rudi.swift */; };
 		45C4E012251F231600DA05A8 /* AmpelRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E00F251F231600DA05A8 /* AmpelRegion.swift */; };
-		45C4E013251F231600DA05A8 /* AmpelRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E011251F231600DA05A8 /* AmpelRoot.swift */; };
 		45C4E014251F231600DA05A8 /* AmpelDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E010251F231600DA05A8 /* AmpelDataSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		45AE09CF252099E200F43EF2 /* PBXContainerItemProxy */ = {
+		455C612D254C1E22008C71D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4563FF49251F10EE00DF131C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 45AE09BF252099E100F43EF2;
-			remoteInfo = "Rudi WidgetExtension";
+			remoteGlobalIDString = 455C6123254C1E22008C71D5;
+			remoteInfo = RudiWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,7 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				45AE09D1252099E200F43EF2 /* Rudi WidgetExtension.appex in Embed App Extensions */,
+				455C612F254C1E22008C71D5 /* RudiWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,34 +63,45 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		452B58F5254C22E9003332FD /* RudiWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RudiWidgetExtension.entitlements; sourceTree = "<group>"; };
+		4537355E2524E42C0017B036 /* CircleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleExtension.swift; sourceTree = "<group>"; };
+		455C6124254C1E22008C71D5 /* RudiWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RudiWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		455C6128254C1E22008C71D5 /* RudiWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RudiWidget.swift; sourceTree = "<group>"; };
+		455C612A254C1E22008C71D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		455C612C254C1E22008C71D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4563FF51251F10EE00DF131C /* Rudi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rudi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4563FF54251F10EE00DF131C /* RudiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RudiApp.swift; sourceTree = "<group>"; };
-		4563FF56251F10EE00DF131C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4563FF58251F10F100DF131C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4563FF5B251F10F100DF131C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4563FF5D251F10F100DF131C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		4563FF60251F10F100DF131C /* Rudi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rudi.xcdatamodel; sourceTree = "<group>"; };
 		4563FF62251F10F100DF131C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4564E1F0251F34DC00BE96DA /* RudiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RudiError.swift; sourceTree = "<group>"; };
+		4567E3042533227200AF0333 /* AlertTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTypes.swift; sourceTree = "<group>"; };
+		4567E30A2533237C00AF0333 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45AE09B825207B3600F43EF2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		45AE09C0252099E100F43EF2 /* Rudi WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rudi WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AE09C2252099E100F43EF2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		45AE09C4252099E100F43EF2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		45AE09C7252099E100F43EF2 /* Rudi_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rudi_Widget.swift; sourceTree = "<group>"; };
-		45AE09C9252099E100F43EF2 /* Rudi_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Rudi_Widget.intentdefinition; sourceTree = "<group>"; };
-		45AE09CA252099E200F43EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		45AE09CC252099E200F43EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45AE09D8252099ED00F43EF2 /* Rudi WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Rudi WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		45B146C5252788EA000D1A97 /* AmpelStartViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpelStartViewExtension.swift; sourceTree = "<group>"; };
 		45B97938251F12A900CB2BB7 /* AmpelStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpelStartView.swift; sourceTree = "<group>"; };
 		45C4E006251F1A9400DA05A8 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		45C4E009251F22DE00DA05A8 /* Rudi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rudi.swift; sourceTree = "<group>"; };
 		45C4E00F251F231600DA05A8 /* AmpelRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpelRegion.swift; sourceTree = "<group>"; };
 		45C4E010251F231600DA05A8 /* AmpelDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpelDataSet.swift; sourceTree = "<group>"; };
-		45C4E011251F231600DA05A8 /* AmpelRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpelRoot.swift; sourceTree = "<group>"; };
 		45E80935251F122B00665A50 /* Rudi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rudi.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		455C6121254C1E22008C71D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455C6126254C1E22008C71D5 /* SwiftUI.framework in Frameworks */,
+				455C6125254C1E22008C71D5 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4563FF4E251F10EE00DF131C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,24 +109,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45AE09BD252099E100F43EF2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45AE09C5252099E100F43EF2 /* SwiftUI.framework in Frameworks */,
-				45AE09C3252099E100F43EF2 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4537355D2524E41D0017B036 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4537355E2524E42C0017B036 /* CircleExtension.swift */,
+				45B146C5252788EA000D1A97 /* AmpelStartViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		455C6127254C1E22008C71D5 /* RudiWidget */ = {
+			isa = PBXGroup;
+			children = (
+				455C6128254C1E22008C71D5 /* RudiWidget.swift */,
+				455C612A254C1E22008C71D5 /* Assets.xcassets */,
+				455C612C254C1E22008C71D5 /* Info.plist */,
+			);
+			path = RudiWidget;
+			sourceTree = "<group>";
+		};
 		4563FF48251F10EE00DF131C = {
 			isa = PBXGroup;
 			children = (
+				452B58F5254C22E9003332FD /* RudiWidgetExtension.entitlements */,
+				4567E30A2533237C00AF0333 /* README.md */,
 				45AE09D8252099ED00F43EF2 /* Rudi WidgetExtension.entitlements */,
 				4563FF53251F10EE00DF131C /* Rudi */,
-				45AE09C6252099E100F43EF2 /* Rudi Widget */,
+				455C6127254C1E22008C71D5 /* RudiWidget */,
 				45AE09C1252099E100F43EF2 /* Frameworks */,
 				4563FF52251F10EE00DF131C /* Products */,
 			);
@@ -124,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				4563FF51251F10EE00DF131C /* Rudi.app */,
-				45AE09C0252099E100F43EF2 /* Rudi WidgetExtension.appex */,
+				455C6124254C1E22008C71D5 /* RudiWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,18 +156,18 @@
 		4563FF53251F10EE00DF131C /* Rudi */ = {
 			isa = PBXGroup;
 			children = (
+				4567E3092533236800AF0333 /* Classes */,
+				4567E3082533234F00AF0333 /* Views */,
+				4567E3032533225400AF0333 /* ENUMs */,
+				4537355D2524E41D0017B036 /* Extensions */,
 				45C4E019251F24CB00DA05A8 /* Codables */,
 				45E80935251F122B00665A50 /* Rudi.entitlements */,
 				4563FF54251F10EE00DF131C /* RudiApp.swift */,
-				4563FF56251F10EE00DF131C /* ContentView.swift */,
 				4563FF58251F10F100DF131C /* Assets.xcassets */,
 				4563FF5D251F10F100DF131C /* Persistence.swift */,
 				4563FF62251F10F100DF131C /* Info.plist */,
 				4563FF5F251F10F100DF131C /* Rudi.xcdatamodeld */,
-				45C4E009251F22DE00DA05A8 /* Rudi.swift */,
 				4563FF5A251F10F100DF131C /* Preview Content */,
-				45B97938251F12A900CB2BB7 /* AmpelStartView.swift */,
-				45C4E006251F1A9400DA05A8 /* PreferencesView.swift */,
 				4564E1F0251F34DC00BE96DA /* RudiError.swift */,
 				45AE09B825207B3600F43EF2 /* Localizable.strings */,
 			);
@@ -158,6 +182,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4567E3032533225400AF0333 /* ENUMs */ = {
+			isa = PBXGroup;
+			children = (
+				4567E3042533227200AF0333 /* AlertTypes.swift */,
+			);
+			path = ENUMs;
+			sourceTree = "<group>";
+		};
+		4567E3082533234F00AF0333 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45B97938251F12A900CB2BB7 /* AmpelStartView.swift */,
+				45C4E006251F1A9400DA05A8 /* PreferencesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4567E3092533236800AF0333 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				45C4E009251F22DE00DA05A8 /* Rudi.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		45AE09C1252099E100F43EF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,23 +216,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		45AE09C6252099E100F43EF2 /* Rudi Widget */ = {
-			isa = PBXGroup;
-			children = (
-				45AE09C7252099E100F43EF2 /* Rudi_Widget.swift */,
-				45AE09C9252099E100F43EF2 /* Rudi_Widget.intentdefinition */,
-				45AE09CA252099E200F43EF2 /* Assets.xcassets */,
-				45AE09CC252099E200F43EF2 /* Info.plist */,
-			);
-			path = "Rudi Widget";
-			sourceTree = "<group>";
-		};
 		45C4E019251F24CB00DA05A8 /* Codables */ = {
 			isa = PBXGroup;
 			children = (
 				45C4E010251F231600DA05A8 /* AmpelDataSet.swift */,
 				45C4E00F251F231600DA05A8 /* AmpelRegion.swift */,
-				45C4E011251F231600DA05A8 /* AmpelRoot.swift */,
 			);
 			path = Codables;
 			sourceTree = "<group>";
@@ -191,6 +228,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		455C6123254C1E22008C71D5 /* RudiWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 455C6130254C1E22008C71D5 /* Build configuration list for PBXNativeTarget "RudiWidgetExtension" */;
+			buildPhases = (
+				455C6120254C1E22008C71D5 /* Sources */,
+				455C6121254C1E22008C71D5 /* Frameworks */,
+				455C6122254C1E22008C71D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RudiWidgetExtension;
+			productName = RudiWidgetExtension;
+			productReference = 455C6124254C1E22008C71D5 /* RudiWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4563FF50251F10EE00DF131C /* Rudi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4563FF65251F10F100DF131C /* Build configuration list for PBXNativeTarget "Rudi" */;
@@ -203,29 +257,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				45AE09D0252099E200F43EF2 /* PBXTargetDependency */,
+				455C612E254C1E22008C71D5 /* PBXTargetDependency */,
 			);
 			name = Rudi;
 			productName = Rudi;
 			productReference = 4563FF51251F10EE00DF131C /* Rudi.app */;
 			productType = "com.apple.product-type.application";
-		};
-		45AE09BF252099E100F43EF2 /* Rudi WidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45AE09D2252099E200F43EF2 /* Build configuration list for PBXNativeTarget "Rudi WidgetExtension" */;
-			buildPhases = (
-				45AE09BC252099E100F43EF2 /* Sources */,
-				45AE09BD252099E100F43EF2 /* Frameworks */,
-				45AE09BE252099E100F43EF2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Rudi WidgetExtension";
-			productName = "Rudi WidgetExtension";
-			productReference = 45AE09C0252099E100F43EF2 /* Rudi WidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -233,13 +270,13 @@
 		4563FF49251F10EE00DF131C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					4563FF50251F10EE00DF131C = {
-						CreatedOnToolsVersion = 12.0;
+					455C6123254C1E22008C71D5 = {
+						CreatedOnToolsVersion = 12.1;
 					};
-					45AE09BF252099E100F43EF2 = {
+					4563FF50251F10EE00DF131C = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -257,12 +294,21 @@
 			projectRoot = "";
 			targets = (
 				4563FF50251F10EE00DF131C /* Rudi */,
-				45AE09BF252099E100F43EF2 /* Rudi WidgetExtension */,
+				455C6123254C1E22008C71D5 /* RudiWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		455C6122254C1E22008C71D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455C612B254C1E22008C71D5 /* Assets.xcassets in Resources */,
+				455C6155254C1E97008C71D5 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4563FF4F251F10EE00DF131C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,18 +319,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45AE09BE252099E100F43EF2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45AE09CB252099E200F43EF2 /* Assets.xcassets in Resources */,
-				45AE09ED25209F1D00F43EF2 /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		455C6120254C1E22008C71D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455C613A254C1E7F008C71D5 /* CircleExtension.swift in Sources */,
+				455C6159254C1EA9008C71D5 /* Rudi.swift in Sources */,
+				455C6136254C1E7D008C71D5 /* AlertTypes.swift in Sources */,
+				455C613E254C1E85008C71D5 /* AmpelDataSet.swift in Sources */,
+				455C614D254C1E8F008C71D5 /* Persistence.swift in Sources */,
+				455C6129254C1E22008C71D5 /* RudiWidget.swift in Sources */,
+				455C6142254C1E88008C71D5 /* AmpelRegion.swift in Sources */,
+				455C6151254C1E93008C71D5 /* RudiError.swift in Sources */,
+				455C615D254C1EB7008C71D5 /* Rudi.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4563FF4D251F10EE00DF131C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,44 +345,77 @@
 				4563FF5E251F10F100DF131C /* Persistence.swift in Sources */,
 				45C4E007251F1A9400DA05A8 /* PreferencesView.swift in Sources */,
 				45C4E00A251F22DE00DA05A8 /* Rudi.swift in Sources */,
+				4537355F2524E42D0017B036 /* CircleExtension.swift in Sources */,
 				4563FF61251F10F100DF131C /* Rudi.xcdatamodeld in Sources */,
-				45AE09CE252099E200F43EF2 /* Rudi_Widget.intentdefinition in Sources */,
-				4563FF57251F10EE00DF131C /* ContentView.swift in Sources */,
 				4564E1F1251F34DC00BE96DA /* RudiError.swift in Sources */,
 				45B97939251F12A900CB2BB7 /* AmpelStartView.swift in Sources */,
 				4563FF55251F10EE00DF131C /* RudiApp.swift in Sources */,
-				45C4E013251F231600DA05A8 /* AmpelRoot.swift in Sources */,
+				45B146C6252788EA000D1A97 /* AmpelStartViewExtension.swift in Sources */,
+				4567E3052533227200AF0333 /* AlertTypes.swift in Sources */,
 				45C4E014251F231600DA05A8 /* AmpelDataSet.swift in Sources */,
 				45C4E012251F231600DA05A8 /* AmpelRegion.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45AE09BC252099E100F43EF2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45AE09E425209A7500F43EF2 /* AmpelDataSet.swift in Sources */,
-				45AE09EA25209A7D00F43EF2 /* Persistence.swift in Sources */,
-				45AE09DB25209A2700F43EF2 /* Rudi.swift in Sources */,
-				45AE09DE25209A2B00F43EF2 /* Rudi.xcdatamodeld in Sources */,
-				45AE09E725209A7800F43EF2 /* AmpelRegion.swift in Sources */,
-				45AE09CD252099E200F43EF2 /* Rudi_Widget.intentdefinition in Sources */,
-				45AE09E125209A3300F43EF2 /* RudiError.swift in Sources */,
-				45AE09C8252099E100F43EF2 /* Rudi_Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		45AE09D0252099E200F43EF2 /* PBXTargetDependency */ = {
+		455C612E254C1E22008C71D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 45AE09BF252099E100F43EF2 /* Rudi WidgetExtension */;
-			targetProxy = 45AE09CF252099E200F43EF2 /* PBXContainerItemProxy */;
+			target = 455C6123254C1E22008C71D5 /* RudiWidgetExtension */;
+			targetProxy = 455C612D254C1E22008C71D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		455C6131254C1E22008C71D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = RudiWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = PMCWJ9GD9L;
+				INFOPLIST_FILE = RudiWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nitricware.Rudi.RudiWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		455C6132254C1E22008C71D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = RudiWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = PMCWJ9GD9L;
+				INFOPLIST_FILE = RudiWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nitricware.Rudi.RudiWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4563FF63251F10F100DF131C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -454,7 +540,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Rudi/Rudi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Rudi/Preview Content\"";
 				DEVELOPMENT_TEAM = PMCWJ9GD9L;
 				ENABLE_PREVIEWS = YES;
@@ -479,7 +565,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Rudi/Rudi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Rudi/Preview Content\"";
 				DEVELOPMENT_TEAM = PMCWJ9GD9L;
 				ENABLE_PREVIEWS = YES;
@@ -496,55 +582,18 @@
 			};
 			name = Release;
 		};
-		45AE09D3252099E200F43EF2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Rudi WidgetExtension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = PMCWJ9GD9L;
-				INFOPLIST_FILE = "Rudi Widget/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nitricware.Rudi.Rudi-Widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		45AE09D4252099E200F43EF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Rudi WidgetExtension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = PMCWJ9GD9L;
-				INFOPLIST_FILE = "Rudi Widget/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nitricware.Rudi.Rudi-Widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		455C6130254C1E22008C71D5 /* Build configuration list for PBXNativeTarget "RudiWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				455C6131254C1E22008C71D5 /* Debug */,
+				455C6132254C1E22008C71D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4563FF4C251F10EE00DF131C /* Build configuration list for PBXProject "Rudi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -559,15 +608,6 @@
 			buildConfigurations = (
 				4563FF66251F10F100DF131C /* Debug */,
 				4563FF67251F10F100DF131C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		45AE09D2252099E200F43EF2 /* Build configuration list for PBXNativeTarget "Rudi WidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45AE09D3252099E200F43EF2 /* Debug */,
-				45AE09D4252099E200F43EF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

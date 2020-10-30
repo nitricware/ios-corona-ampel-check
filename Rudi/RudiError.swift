@@ -12,4 +12,5 @@ enum RudiError: Error {
     case dbFetchError
     case dbDeleteError
     case dbExportError
+    case genericError
 }

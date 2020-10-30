@@ -1,33 +1,36 @@
 //
-//  Rudi_Widget.swift
-//  Rudi Widget
+//  RudiWidget.swift
+//  RudiWidget
 //
-//  Created by Kurt Höblinger on 27.09.20.
+//  Created by Kurt Höblinger on 30.10.20.
 //
 
 import WidgetKit
 import SwiftUI
-import Intents
 
-struct Provider: IntentTimelineProvider {
-    
+/*
+ This TimelineProvider is responsible for setting the update
+ interval. By default, it sets an interval of 1 hour for the
+ next 5 hours.
+ */
+struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+        SimpleEntry(date: Date())
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+        let entry = SimpleEntry(date: Date())
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+            let entry = SimpleEntry(date: entryDate)
             entries.append(entry)
         }
 
@@ -38,10 +41,14 @@ struct Provider: IntentTimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let configuration: ConfigurationIntent
 }
 
-struct Rudi_WidgetEntryView : View {
+/*
+ This is the actual widget. It reuses some of the code of
+ AmpelStartView.swift
+ */
+
+struct RudiWidgetEntryView : View {
     var entry: Provider.Entry
     let rudi = Rudi()
     @State private var myGemeinde: Region?
@@ -63,42 +70,32 @@ struct Rudi_WidgetEntryView : View {
             HStack {
                 if family == .systemSmall {
                     Circle()
-                        .fill(trafficSmall)
-                        .frame(width: 50, height: 50)
-                        /*.overlay(
-                            RoundedRectangle(cornerRadius: 50)
-                                .stroke(Color.red, lineWidth: 4)
-                        )*/
+                        .trafficLight(
+                            fillColor: trafficSmall,
+                            lineColor: Color.gray
+                        )
                 }
                 if (family == .systemMedium || family == .systemLarge) {
                     Circle()
-                        .fill(trafficRed)
-                        .frame(width: 50, height: 50)
-                        /*.overlay(
-                            RoundedRectangle(cornerRadius: 50)
-                                .stroke(Color.red, lineWidth: 4)
-                        )*/
+                        .trafficLight(
+                            fillColor: trafficRed,
+                            lineColor: Color.red
+                        )
                     Circle()
-                        .fill(trafficOrange)
-                        .frame(width: 50, height: 50)
-                        /*.overlay(
-                            RoundedRectangle(cornerRadius: 50)
-                                .stroke(Color.orange, lineWidth: 4)
-                        )*/
+                        .trafficLight(
+                            fillColor: trafficOrange,
+                            lineColor: Color.orange
+                        )
                     Circle()
-                        .fill(trafficYellow)
-                        .frame(width: 50, height: 50)
-                        /*.overlay(
-                            RoundedRectangle(cornerRadius: 50)
-                                .stroke(Color.yellow, lineWidth: 4)
-                        )*/
+                        .trafficLight(
+                            fillColor: trafficYellow,
+                            lineColor: Color.yellow
+                        )
                     Circle()
-                        .fill(trafficGreen)
-                        .frame(width: 50, height: 50)
-                        /*.overlay(
-                            RoundedRectangle(cornerRadius: 50)
-                                .stroke(Color.green, lineWidth: 4)
-                        )*/
+                        .trafficLight(
+                            fillColor: trafficGreen,
+                            lineColor: Color.green
+                        )
                 }
             }
             if family == .systemLarge {
@@ -127,7 +124,7 @@ struct Rudi_WidgetEntryView : View {
         do {
             myGemeinde = try rudi.getMyGemeinde(gkz: selectedGemeinde)
         } catch {
-            print("oops")
+            print("Error occured while catching myGemeinde.")
         }
         
         trafficGreen = .gray
@@ -154,22 +151,27 @@ struct Rudi_WidgetEntryView : View {
     }
 }
 
+/*
+ The section below holds the necessary code for the
+ add widget screen.
+ */
 @main
-struct Rudi_Widget: Widget {
-    let kind: String = "Rudi_Widget"
+struct RudiWidget: Widget {
+    let kind: String = "RudiWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            Rudi_WidgetEntryView(entry: entry)
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+            RudiWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Ampel")
         .description("Mit dem Widget siehst du die aktuelle Ampelfarbe deiner eingestellten Gemeinde.")
     }
 }
 
-struct Rudi_Widget_Previews: PreviewProvider {
+// MARK: Preview
+struct RudiWidget_Previews: PreviewProvider {
     static var previews: some View {
-        Rudi_WidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemMedium))
+        RudiWidgetEntryView(entry: SimpleEntry(date: Date()))
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

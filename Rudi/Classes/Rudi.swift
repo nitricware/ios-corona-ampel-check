@@ -13,7 +13,7 @@ class Rudi {
     var jsonData: [AmpelDataSet]? = nil
     let persistenceController = PersistenceController.shared
     
-    public func fetchData() -> Void {
+    public func fetchData() throws -> Void {
         if let dataURL = URL(string: dataURLRaw) {
             do {
                 let json = try Data(contentsOf: dataURL)
@@ -21,13 +21,13 @@ class Rudi {
                 do {
                     self.jsonData = try decoder.decode([AmpelDataSet].self, from: json)
                 } catch {
-                    print("Couldn't decode JSON")
+                    throw RudiError.genericError
                 }
             } catch {
-                print("Couldn't fetch data.")
+                throw RudiError.genericError
             }
         } else {
-            print("Couldn't create URL object")
+            throw RudiError.genericError
         }
     }
     
@@ -61,7 +61,7 @@ class Rudi {
                 do {
                     try persistenceController.container.viewContext.save()
                 } catch {
-                    print("not again...")
+                    throw RudiError.genericError
                 }
             }
         }
@@ -84,7 +84,7 @@ class Rudi {
                     return region
                 }
             } catch {
-                throw RudiError.dbFetchError
+                throw RudiError.genericError
             }
         }
         
