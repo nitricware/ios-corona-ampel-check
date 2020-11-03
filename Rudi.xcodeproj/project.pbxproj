@@ -19,7 +19,6 @@
 		455C6142254C1E88008C71D5 /* AmpelRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E00F251F231600DA05A8 /* AmpelRegion.swift */; };
 		455C614D254C1E8F008C71D5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF5D251F10F100DF131C /* Persistence.swift */; };
 		455C6151254C1E93008C71D5 /* RudiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4564E1F0251F34DC00BE96DA /* RudiError.swift */; };
-		455C6155254C1E97008C71D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45AE09B825207B3600F43EF2 /* Localizable.strings */; };
 		455C6159254C1EA9008C71D5 /* Rudi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E009251F22DE00DA05A8 /* Rudi.swift */; };
 		455C615D254C1EB7008C71D5 /* Rudi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF5F251F10F100DF131C /* Rudi.xcdatamodeld */; };
 		4563FF55251F10EE00DF131C /* RudiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF54251F10EE00DF131C /* RudiApp.swift */; };
@@ -29,9 +28,10 @@
 		4563FF61251F10F100DF131C /* Rudi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4563FF5F251F10F100DF131C /* Rudi.xcdatamodeld */; };
 		4564E1F1251F34DC00BE96DA /* RudiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4564E1F0251F34DC00BE96DA /* RudiError.swift */; };
 		4567E3052533227200AF0333 /* AlertTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567E3042533227200AF0333 /* AlertTypes.swift */; };
-		45AE09B925207B3600F43EF2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45AE09B825207B3600F43EF2 /* Localizable.strings */; };
 		45B146C6252788EA000D1A97 /* AmpelStartViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B146C5252788EA000D1A97 /* AmpelStartViewExtension.swift */; };
 		45B97939251F12A900CB2BB7 /* AmpelStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B97938251F12A900CB2BB7 /* AmpelStartView.swift */; };
+		45BD47902551BDFC00758491 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45BD47932551BDFC00758491 /* Localizable.strings */; };
+		45BD47912551BDFC00758491 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45BD47932551BDFC00758491 /* Localizable.strings */; };
 		45C4E007251F1A9400DA05A8 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E006251F1A9400DA05A8 /* PreferencesView.swift */; };
 		45C4E00A251F22DE00DA05A8 /* Rudi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E009251F22DE00DA05A8 /* Rudi.swift */; };
 		45C4E012251F231600DA05A8 /* AmpelRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4E00F251F231600DA05A8 /* AmpelRegion.swift */; };
@@ -79,12 +79,12 @@
 		4564E1F0251F34DC00BE96DA /* RudiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RudiError.swift; sourceTree = "<group>"; };
 		4567E3042533227200AF0333 /* AlertTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTypes.swift; sourceTree = "<group>"; };
 		4567E30A2533237C00AF0333 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		45AE09B825207B3600F43EF2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		45AE09C2252099E100F43EF2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		45AE09C4252099E100F43EF2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		45AE09D8252099ED00F43EF2 /* Rudi WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Rudi WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		45B146C5252788EA000D1A97 /* AmpelStartViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpelStartViewExtension.swift; sourceTree = "<group>"; };
 		45B97938251F12A900CB2BB7 /* AmpelStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpelStartView.swift; sourceTree = "<group>"; };
+		45BD47922551BDFC00758491 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		45C4E006251F1A9400DA05A8 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		45C4E009251F22DE00DA05A8 /* Rudi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rudi.swift; sourceTree = "<group>"; };
 		45C4E00F251F231600DA05A8 /* AmpelRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpelRegion.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 				4563FF5F251F10F100DF131C /* Rudi.xcdatamodeld */,
 				4563FF5A251F10F100DF131C /* Preview Content */,
 				4564E1F0251F34DC00BE96DA /* RudiError.swift */,
-				45AE09B825207B3600F43EF2 /* Localizable.strings */,
+				45BD47932551BDFC00758491 /* Localizable.strings */,
 			);
 			path = Rudi;
 			sourceTree = "<group>";
@@ -287,6 +287,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				de,
+				Base,
 			);
 			mainGroup = 4563FF48251F10EE00DF131C;
 			productRefGroup = 4563FF52251F10EE00DF131C /* Products */;
@@ -305,7 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				455C612B254C1E22008C71D5 /* Assets.xcassets in Resources */,
-				455C6155254C1E97008C71D5 /* Localizable.strings in Resources */,
+				45BD47912551BDFC00758491 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4563FF5C251F10F100DF131C /* Preview Assets.xcassets in Resources */,
-				45AE09B925207B3600F43EF2 /* Localizable.strings in Resources */,
+				45BD47902551BDFC00758491 /* Localizable.strings in Resources */,
 				4563FF59251F10F100DF131C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +367,17 @@
 			targetProxy = 455C612D254C1E22008C71D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45BD47932551BDFC00758491 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45BD47922551BDFC00758491 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		455C6131254C1E22008C71D5 /* Debug */ = {
